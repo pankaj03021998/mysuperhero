@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Superhero</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width,intial-scale=1">
+		<link rel="stylesheet" type="text/css" href="superhero.css">
+		<style>
+			body{
+				background-color: white;
+				margin-left: 0px;
+				margin-right: 0px;
+			}
+			#logo{
+				font-size: 17px;
+				font-family: fantasy;
+				color: red;
+			}
+			h3{
+				font-family:inherit;
+			}
+			.cardset{
+				transition: 1s;
+			}
+			.cardset:hover{
+				transform: scale(1.08);
+			}
+		   footer{
+               padding: 10px 0;
+               background-color: black;
+               color: #9d9d9d;
+               bottom: 0;
+               width: 100%;
+           }
+		</style>
+	
+	</head>
+	<body>
+	<nav class="navbar sticky-top navbar-light navbar-expand-lg bg-dark navposition">
+		<div class="container">
+			<a class="navbar-brand" href="#"><font style="color: aqua">MysuperHero</font></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+		  <a class="nav-link" href="#"><font style="color: aqua">Home </font><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+		  <a class="nav-link" href="#"><font style="color: aqua">Link</font></a>
+      </li>
+      <li class="nav-item">
+		  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><font style="color: aqua">Disabled</font></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+		</div>			
+</nav>
+
+		<br>
+	<div class="container-fluid">
+		<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-interval="10000">
+	  <div class="card bg-dark text-white">
+  <img src="endgame1.jpg" class="card-img" alt="marvel3">
+  <div class="card-img-overlay">
+    <h3 class="card-title">Avenger Endgame</h3>
+    <p class="card-text">This is the fight of our lives and we are gonna win<br> whatever it takes !</p>
+    <p class="card-text"></p>
+  </div>
+</div>
+		</div>
+	      <div class="carousel-item" data-interval="5000">
+      <div class="card bg-dark text-white">
+  <img src="ironman2.jpg" class="card-img" alt="Iron man">
+  <div class="card-img-overlay">
+    <h3 class="card-title">Iron Man </h3>
+    <p class="card-text">You can take everything from me but one thing you can't take from me I'm Iron man !</p>
+    <p class="card-text"></p>
+  </div>
+</div>
+    </div>
+    <div class="carousel-item" data-interval="5000">
+      <div class="card bg-dark text-white">
+  <img src="captain.jpg" class="card-img" alt="marvel3">
+  <div class="card-img-overlay">
+    <h3 class="card-title">Captain america </h3>
+    <p class="card-text">The price of freedom is high. It always have been.And It's a price <br>I'm willing to pay !</p>
+    <p class="card-text"></p>
+  </div>
+</div>
+    </div>
+    <div class="carousel-item" data-interval="5000">
+      <div class="card bg-dark text-white">
+  <img src="ragnarok.jpg" class="card-img" alt="marvel2">
+  <div class="card-img-overlay">
+    <h3 class="card-title">Thor Odinson</h3>
+    <p class="card-text">I choose to run towards my problem not away from them <br>because that's what Heros do !</p>
+    <p class="card-text"></p>
+  </div>
+</div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+		</div>
+		<br>
+		<br>
+		<div class="container">
+			
+			<div class="card-deck">
+  <div class="card cardset">
+    <img src="thor.jpg" class="card-img-top" alt="RAGNAROK">
+    <div class="card-body">
+      <h5 class="card-title">THOR:RAGNAROK</h5>
+      <p class="card-text">Deprived of his mighty hammer Mjolnir, Thor must escape the other side of the universe to save his home, Asgard, from Hela, the goddess of death.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card cardset">
+    <img src="endgame2.jpg" class="card-img-top" alt="ENDGAME">
+    <div class="card-body">
+      <h5 class="card-title">AVENGER:ENDGAME</h5>
+      <p class="card-text">Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his oxygen supply starts to dwindle. Meanwhile</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card cardset">
+    <img src="civilwar.jpg" class="card-img-top" alt="CIVILWAR">
+    <div class="card-body">
+      <h5 class="card-title">CAPTAIN AMERICA :CIVIL WAR</h5>
+      <p class="card-text">Friction arises between superheroes when one group supports the government's decision to implement a law to control their powers while the other opposes it.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+			</div>
+	
+		<br>
+		<footer>
+			<center><h2>pankaj kumar</h2></center>
+		</footer>
+	
+	</body>
+</html>
